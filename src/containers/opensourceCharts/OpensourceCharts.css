@@ -5,6 +5,7 @@
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 40px;
 }
 
 .os-charts-body-div {
@@ -14,6 +15,7 @@
   /* table-layout: fixed; */
   width: 100%;
 }
+
 /* 
 .tb-item {
     display: table-cell;

@@ -1,10 +1,52 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/database';
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyCk1rcr7UL1fCLhs-nlv1P1JhsG7EGWf68',
+  authDomain: 'portfolio-website-23bb3.firebaseapp.com',
+  databaseURL: 'https://portfolio-website-23bb3-default-rtdb.asia-southeast1.firebasedatabase.app',
+  projectId: 'portfolio-website-23bb3',
+  storageBucket: 'portfolio-website-23bb3.appspot.com',
+  messagingSenderId: '982468605870',
+  appId: '1:982468605870:web:6b8e4a267047e949aeba3f',
+  measurementId: "G-25HPT8FH8N"
+};
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+
+}
+
+const WebsiteCounter = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    const db = firebase.database();
+    const countRef = db.ref('visitCount');
+
+    countRef.transaction(currentCount => {
+      return currentCount + 1;
+    });
+
+    countRef.on('value', snapshot => {
+      const count = snapshot.val();
+      setVisitCount(count);
+    });
+  }, []);
+
+  return (
+    <div className="hit">
+      Homepage hit count: {visitCount}🔥
+    </div>
+  );
+};
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -38,6 +80,7 @@ export default function Greeting(props) {
                   className="portfolio-repo-btn"
                 />
               </div>
+              {/* <WebsiteCounter /> */}
               {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />
               <Button text="See my resume" newTab={true} href={greeting.resumeLink} />

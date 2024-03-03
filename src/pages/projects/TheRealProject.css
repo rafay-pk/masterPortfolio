@@ -1,0 +1,22 @@
+/* Project.css */
+.project {
+    padding: 15px;
+    margin: 15px;
+    
+    text-align: left; /* Add this line */
+  }
+  
+  .project h2 {
+    margin: 0;
+    
+  }
+  
+  .project h3 {
+    margin: 0;
+    margin: 10px 0;
+  }
+  
+  .project p {
+    margin: 10px 0;
+  }
+  

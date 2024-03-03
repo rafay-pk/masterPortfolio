@@ -5,10 +5,10 @@
 
 .issue-chart-header {
   font-family: "Google Sans Regular";
+  margin-bottom: 20px;
 }
 
-@media (max-width: 1380px) {
-}
+@media (max-width: 1380px) {}
 
 @media (max-width: 768px) {
   .issue-chart-header {

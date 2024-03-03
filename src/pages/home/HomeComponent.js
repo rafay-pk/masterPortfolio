@@ -5,6 +5,7 @@ import Skills from "../../containers/skills/Skills";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 
+
 class Home extends Component {
   render() {
     return (

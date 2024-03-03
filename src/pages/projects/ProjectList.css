@@ -1,0 +1,333 @@
+Reset some default browser styles body,
+div,
+h1,
+h2,
+h3,
+p,
+button,
+iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #E6FAF5;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1500px;
+    justify-content: center;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.project-card:hover {
+    transform: scale(1.3);
+}
+
+.project-thumbnail {
+    width: 85%;
+    height: auto;
+    object-fit: fill;
+    /* border-radius: 10px 10px 10px 10px; */
+}
+
+.project-banner {
+    width: 50px;
+    height: auto;
+    object-fit: fill;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.project-title {
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    position: relative;
+}
+
+.popup-banner img {
+    width: 1280px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.popup-details {
+    font-size: 20px;
+    max-width: 520px;
+    margin: 0px 20px 0px 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.popup-details h2 {
+    font-size: 24px;
+}
+
+.popup-details p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.horizontal-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.popup-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.image-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 70%;
+    width: 100%;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    max-width: 75%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column2 {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* .content {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+} */
+
+/* .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.popup-video {
+    width: 720px;
+    height: 405px;
+    position: relative;
+}
+
+.popup-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: minmax(50vmax, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    overflow: hidden;
+    /* Ensure videos maintain aspect ratio */
+}
+
+
+.popup-close-container {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #d9dbdf;
+}
+
+.popup-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.popup-close-container:hover {
+    transform: scale(1.3);
+}
+
+.popup-close:focus {
+    outline: invert;
+}
+
+.clickable-image {
+    cursor: pointer;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .horizontal-box {
+        flex-direction: column;
+    }
+
+    .projects {
+        justify-content: center;
+    }
+
+    .project-thumbnail {
+        width: 85%;
+    }
+
+    .project-card {
+        width: 35%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .popup-banner img {
+        width: 98%;
+    }
+
+    .popup-content {
+        max-width: 80%;
+    }
+
+    .popup-video {
+        width: 352px;
+        height: 198px;
+    }
+
+    .popup-close-container {
+        left: 0px;
+        top: -65px;
+    }
+}

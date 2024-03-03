@@ -34,6 +34,9 @@ class Education extends Component {
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
                   Basic Qualification and Certifcations
                 </h3>
+                <p style={{ margin: "40px", fontFamily: "Google Sans Medium", fontSize: "20px", lineHeight: "30px", fontWeight: "200", color: theme.secondaryText }}>
+                  I have been working in multiple companies and projects since I graduated with my undergraduate degree.
+                </p>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
               </div>
             </div>

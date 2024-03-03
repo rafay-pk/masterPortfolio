@@ -11,7 +11,7 @@
   display: flex;
 }
 
-.experience-heading-div > * {
+.experience-heading-div>* {
   flex: 1;
 }
 
@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.experience-heading-img-div > * {
+.experience-heading-img-div>* {
   max-width: 100%;
   height: auto;
 }
@@ -37,6 +37,7 @@
   line-height: 1.1;
   text-align: center;
   margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 .experience-heading-sub-text {
@@ -50,8 +51,8 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: "Google Sans Medium";
 }
 
@@ -60,6 +61,7 @@
     font-size: 50px;
     margin-top: 80px;
   }
+
   .experience-heading-sub-text {
     font-size: 25px;
   }

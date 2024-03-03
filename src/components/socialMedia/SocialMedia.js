@@ -25,7 +25,8 @@ export default function socialMedia(props) {
             rel="noopener noreferrer"
           >
             <IconWrapper {...media} {...props}>
-              <i className={`fab ${media.fontAwesomeIcon}`}></i>
+              <i className={`${media.fontAwesomeIcon === "fa-envelope" ? "fas" : "fab"
+                } ${media.fontAwesomeIcon}`}></i>
             </IconWrapper>
             {/* <span></span> */}
           </a>

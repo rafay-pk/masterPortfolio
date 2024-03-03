@@ -19,6 +19,7 @@ class DegreeCard extends Component {
                 }}
                 src={require(`../../assests/images/${degree.logo_path}`)}
                 alt={degree.alt_name}
+                onClick={() => window.open(degree.website_link)}
               />
             </div>
           </Flip>

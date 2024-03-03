@@ -16,6 +16,7 @@ class ExperienceCard extends Component {
               className="experience-card-logo"
               src={require(`../../assests/images/${experience["logo_path"]}`)}
               alt=""
+              onClick={() => window.open(experience["company_url"])}
             />
           </div>
         </Fade>
