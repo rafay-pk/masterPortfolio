@@ -16,21 +16,21 @@ const projects = [
   {
     title: 'Bank Information System',
     type: 'Semester Project - C++',
-    description: 'I was the team lead dividing the work and then integrating it back into the complete program. I also wrote the filing part and the menu UI part of the program.',
+    description: 'A system that can store and retrieve information about bank accounts, customers and transactions.',
     role: 'Team Lead',
     responsibilities: 'Dividing the work, integrating the program, writing filing part, writing menu UI part'
   },
   {
     title: 'PTCL Management System',
     type: 'Semester Project - MSSQL',
-    description: 'A management system for telephone subscribers and their billing. I designed the project.',
-    role: 'Project Designer',
-    responsibilities: 'Designing the project'
+    description: 'A management system for telephone subscribers and their billing.',
+    role: 'Software Engineer',
+    responsibilities: 'Gathering Requirements and designing the project'
   },
   {
     title: 'Transport Management System',
     type: 'Semester Project - C#, MSSQL',
-    description: 'I helped in bugfixes in the code and the presentation of the final project.',
+    description: 'A system with a database for managing a transport company.',
     role: 'Bugfix Contributor',
     responsibilities: 'Assisting in bugfixes, aiding in presentation'
   },
@@ -39,33 +39,33 @@ const projects = [
     type: 'Semester Project - C++',
     description: 'A tool I wrote to convert simple Activity Flow Diagrams (Flow Charts) into C++ code.',
     role: 'Project Developer',
-    responsibilities: 'Writing code for the tool'
+    responsibilities: 'Complete development'
   },
   {
     title: 'MyOLX',
     type: 'Semester Project - HTML, PHP, MySQL',
-    description: 'A retail website. I helped with the backend that connected to the database.',
+    description: 'A retail website.',
     role: 'Backend Developer',
     responsibilities: 'Developing backend connecting to database'
   },
   {
     title: 'Get an android camera to recognize a room',
     type: 'Final year project',
-    description: 'I wrote the core in Matlab that saved room data and compared the new image from the camera to recognize which room it is in.',
+    description: 'One of the tools for a bigger robotics project. This tool focuses on recongnizing a room using an android phone camera.',
     role: 'Core Developer',
-    responsibilities: 'Writing core in Matlab, room data saving, image comparison'
+    responsibilities: 'Writing core in Matlab for image comparison'
   },
   {
     title: 'Class 500',
     type: 'Internship project',
-    description: 'I was a tester. I used Microsoft Project and Excel sheets for managing, Mirantis for bug reporting and Photoshop to compare screen shots with mock-ups.',
+    description: 'An application for sharing contacts with a single touch.',
     role: 'Tester',
     responsibilities: 'Using Microsoft Project, Excel sheets for managing, Mirantis for bug reporting, Photoshop for comparing screenshots'
   },
   {
     title: 'Alarm Buddy',
     type: 'Internship project',
-    description: 'A shared alarm between friends. Except for UI image elements that a designed made for me, I coded all the rest.',
+    description: 'A shared alarm between friends. Wake up your friends on time for your plans together.',
     role: 'Lead Developer',
     responsibilities: 'Coding all except UI image elements'
   },
